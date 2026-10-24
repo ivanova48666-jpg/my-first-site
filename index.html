@@ -3,14 +3,109 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Мой первый сайт</title>
-</head>
-<body>
-  <h1>Привет! Это мой первый сайт!</h1>
-  <p>Это моя вторая версия сайта!</p>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мой сайт с ИИ</title>
 
-  <button onclick="alert('Ура! Всё работает!')">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #10172e, #293b70);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 90px 20px 50px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 56px);
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 30px 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 18px;
+      padding: 25px;
+      width: 250px;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    button {
+      background: #818cf8;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 25px;
+    }
+
+    button:hover {
+      background: #6366f1;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Создаю сайты с помощью ИИ 🚀</h1>
+    <p>
+      Учусь вайб-кодингу, GitHub и созданию
+      настоящих цифровых проектов.
+    </p>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <h2>🤖 Искусственный интеллект</h2>
+      <p>ИИ помогает мне писать код.</p>
+    </div>
+
+    <div class="card">
+      <h2>💻 GitHub</h2>
+      <p>Сохраняю версии своих проектов.</p>
+    </div>
+
+    <div class="card">
+      <h2>🌐 Мой сайт</h2>
+      <p>Публикую результат в интернете.</p>
+    </div>
+  </section>
+
+  <button onclick="showMessage()">
     Нажми меня
-  </button>  
+  </button>
+
+  <script>
+    function showMessage() {
+      alert("Поздравляю! Мой сайт работает!");
+    }
+  </script>
 </body>
 </html>
